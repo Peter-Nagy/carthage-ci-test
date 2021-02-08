@@ -3,4 +3,5 @@ jobs:
     macos:
       xcode: "12.2.0"
     steps:
+      - checkout
       - run: ./carthage.sh bootstrap --cache-builds --no-use-binaries --platform iOS
